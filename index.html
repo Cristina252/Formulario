@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="StyleSheet" href="css/styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <div id="cabecera">
+      <h1 id="title" class="text-center">Encuesta de satisfacción</h1>
+      <h4 id="description">
+        Sus respuestas serán tratadas de forma confidencial y serán utilizadas
+        únicamente para mejorar el servicio.
+      </h4>
+    </div>
+
+    <form id="survey-form" class="form-group">
+      <div id="contenedor">
+        <div class="form-group">
+          <label id="name-label" for="name">Nombre</label>
+
+          <input
+            type="text"
+            name="nombre"
+            id="name"
+            class="form-control"
+            placeholder="Ingrese su nombre"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email"> Email</label>
+
+          <input
+            type="email"
+            email="email"
+            id="email"
+            class="form-control"
+            placeholder="Ingrese su email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number"> Edad</label>
+
+          <input
+            type="number"
+            number="number"
+            id="number"
+            weidth="100px"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Ingrese su edad"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <p id="nivel">¿Cuál es su nivel de escolaridad?</p>
+          <select
+            id=" dropdown"
+            name="escolaridad"
+            class="form-control"
+            required
+          >
+            <option disabled selected value>
+              Seleccione nivel de escolaridad
+            </option>
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="profesional">Profesional</option>
+            <option value="especializacion">Especialización</option>
+            <option value="maestria">Maestría</option>
+            <option value="doctorado">Doctorado</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>¿Cuál es su grado de satisfacción por la atención prestada?</p>
+          <label>
+            <input
+              name="gradoSatisfaccion"
+              value="completamenteSatisfecho"
+              type="radio"
+              class="input-radio"
+              checked
+            />
+            Completamente Satisfecho
+          </label>
+
+          <label>
+            <input
+              name="gradoSatisfaccion"
+              value="Satisfecho"
+              type="radio"
+              class="input-radio"
+            />
+            Satisfecho
+          </label>
+
+          <label>
+            <input
+              name="gradoSatisfaccion"
+              value="Insatisfecho"
+              type="radio"
+              class="input-radio"
+            />Insatisfecho
+          </label>
+
+          <label>
+            <input
+              name="gradoSatisfaccion"
+              value="completamenteInsatisfecho"
+              type="radio"
+              class="input-radio"
+            />
+            Completamente Insatisfecho
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            ¿Cuál es el medio que usted usa con más frecuencia para
+            contactarnos?
+          </p>
+
+          <select
+            id="recomendacion"
+            name="recomendacion"
+            class="form-control"
+            required
+          >
+            <option disabled selected value>Seleccione una opción</option>
+            <option value="redessociales">Redes sociales</option>
+            <option value="callcenter">Servicio al cliente- Call center</option>
+            <option value="presencial">Presencial- Oficina</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            ¿Recomendaría usted nuestros servicios?
+            <span class="clue"></span>
+          </p>
+
+          <label>
+            <input
+              name="recomendaciones"
+              value="si"
+              type="checkbox"
+              class="input-checkbox"
+            />Si
+          </label>
+
+          <label>
+            <input
+              name="recomendaciones"
+              value="no"
+              type="checkbox"
+              class="input-checkbox"
+            />No
+          </label>
+
+          <label>
+            <input
+              name="recomendaciones"
+              value="talVez"
+              type="checkbox"
+              class="input-checkbox"
+            />Tal Vez
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p id="sugerencia">Sugerencias y comentarios</p>
+          <textarea
+            id="comentarios"
+            class="input-textarea"
+            name="comentario"
+            placeholder="Escriba un comentario o sugerencias..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Enviar
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
